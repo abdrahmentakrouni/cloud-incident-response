@@ -1,0 +1,36 @@
+{
+  "version": "0",
+  "id": "2b7a9e3c-4d55-4e66-bf77-2c3d4e5f6a7b",
+  "detail-type": "GuardDuty Finding",
+  "source": "aws.guardduty",
+  "account": "111122223333",
+  "time": "2026-09-16T03:30:00Z",
+  "region": "eu-west-1",
+  "resources": [],
+  "detail": {
+    "schemaVersion": "2.0",
+    "accountId": "111122223333",
+    "region": "eu-west-1",
+    "partition": "aws",
+    "id": "9a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d",
+    "type": "CryptoCurrency:Runtime/BitcoinTool!DNS",
+    "title": "Bitcoin tool found running on instance.",
+    "description": "Bitcoin-related domain name was queried by a process running on instance i-0d5f1e2a3b4c5d600.",
+    "severity": 8.0,
+    "createdAt": "2026-09-16T03:30:00Z",
+    "resource": {
+      "resourceType": "Instance",
+      "instanceDetails": {
+        "instanceId": "i-0d5f1e2a3b4c5d600",
+        "instanceType": "t3.medium",
+        "platform": "linux"
+      }
+    },
+    "service": {
+      "serviceName": "guardduty",
+      "detectorId": "12abc34d567e8fa901bc234d56789f0e",
+      "count": 4,
+      "archived": false
+    }
+  }
+}

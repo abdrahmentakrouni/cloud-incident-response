@@ -1,0 +1,36 @@
+{
+  "version": "0",
+  "id": "f9a8b7c6-d5e4-4f33-9a22-4b5c6d7e8f9a",
+  "detail-type": "AWS API Call via CloudTrail",
+  "source": "aws.iam",
+  "account": "111122223333",
+  "time": "2026-09-16T05:15:02Z",
+  "region": "us-east-1",
+  "resources": [],
+  "detail": {
+    "eventVersion": "1.09",
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDACKCEVSQ6C2EXAMPLE",
+      "arn": "arn:aws:iam::111122223333:user/devops-lead",
+      "accountId": "111122223333",
+      "userName": "devops-lead"
+    },
+    "eventTime": "2026-09-16T05:15:02Z",
+    "eventSource": "iam.amazonaws.com",
+    "eventName": "CreateAccessKey",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "82.14.201.9",
+    "requestParameters": {
+      "userName": "reporting-service"
+    },
+    "responseElements": {
+      "accessKey": {
+        "userName": "reporting-service",
+        "status": "Active"
+      }
+    },
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "111122223333"
+  }
+}

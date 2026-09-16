@@ -1,0 +1,36 @@
+{
+  "version": "0",
+  "id": "d1e2f3a4-b5c6-4d77-8e88-3a4b5c6d7e8f",
+  "detail-type": "GuardDuty Finding",
+  "source": "aws.guardduty",
+  "account": "111122223333",
+  "time": "2026-09-16T04:02:11Z",
+  "region": "eu-west-1",
+  "resources": [],
+  "detail": {
+    "schemaVersion": "2.0",
+    "accountId": "111122223333",
+    "region": "eu-west-1",
+    "partition": "aws",
+    "id": "0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b",
+    "type": "UnauthorizedAccess:IAMUser/InstanceCredentialExfiltration",
+    "title": "Instance credentials were exfiltrated.",
+    "description": "Instance role credentials were used from an external IP address that is known to be a Tor exit node.",
+    "severity": 8.0,
+    "createdAt": "2026-09-16T04:02:11Z",
+    "resource": {
+      "resourceType": "AccessKey",
+      "accessKeyDetails": {
+        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+        "userName": "ci-bot",
+        "userType": "IAMUser"
+      }
+    },
+    "service": {
+      "serviceName": "guardduty",
+      "detectorId": "12abc34d567e8fa901bc234d56789f0e",
+      "count": 1,
+      "archived": false
+    }
+  }
+}
