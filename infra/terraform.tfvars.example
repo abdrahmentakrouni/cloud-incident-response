@@ -1,0 +1,19 @@
+# Copy to terraform.tfvars and fill in the email addresses.
+#   cp terraform.tfvars.example terraform.tfvars
+#   terraform init && terraform plan
+
+project_name    = "cir"
+aws_region      = "eu-west-1"
+alert_email     = "oncall@example.com" # required: receives every incident
+alert_from_email = "alerts@example.com"
+
+# Safety switches - recommended first deployment:
+dry_run           = true  # responders plan and log, but never mutate
+auto_remediation  = true  # triage hands actions to the remediators
+# Day two, after reading the logs and trusting the plans:
+#   dry_run = false
+
+tags = {
+  Owner = "security-team"
+  Env   = "prod"
+}
