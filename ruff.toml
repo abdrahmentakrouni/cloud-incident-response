@@ -1,0 +1,19 @@
+# Lint profile for the incident response pipeline.
+# E501 is handled by line-length; long evidence strings and skip
+# comments occasionally run over and nobody wins from splitting them.
+
+line-length = 110
+target-version = "py312"
+
+[lint]
+select = [
+    "E",   # pycodestyle errors (incl. E402 - imports after sys.path setup)
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # import sorting
+    "UP",  # pyupgrade - keep the codebase modern
+    "B",   # bugbear - real footguns
+]
+ignore = [
+    "E501", # see line-length note above
+]
