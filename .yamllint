@@ -1,0 +1,18 @@
+# Lint rules for GitHub Actions workflows (CI keeps itself honest too).
+rules:
+  braces:
+    min-spaces-inside: 0
+    max-spaces-inside: 1
+  brackets:
+    min-spaces-inside: 0
+    max-spaces-inside: 1
+  document-start:
+    present: false
+  indentation:
+    spaces: consistent
+    indent-sequences: consistent
+  line-length:
+    max: 120
+    allow-non-breakable-words: true
+  truthy:
+    ignore: .github/workflows/*.yml   # "on:" is not a boolean
